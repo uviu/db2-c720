@@ -3,7 +3,7 @@
 ACCEPT anz PROMPT 'Anzahl der Spitzenverdiener'
 DECLARE
     n number(3) := &anz;
-    name emp.ENAME&TYPE;
+    name emp.ENAME%TYPE;
     gehalt emp.SAL%TYPE;
     CURSOR empcursor IS
     SELECT ename, sal
@@ -12,8 +12,13 @@ DECLARE
     ORDER BY sal DESC;
 BEGIN
     OPEN empcursor;
-    FETCH empcursor INTO name, gehalt;
-    --beginn der schleife
+    LOOP
+        FETCH empcursor INTO name, gehalt;
+        EXIT WHEN empcursor%NOTFOUND OR empcursor%ROWCOUNT >n;
+        INSERT INTO TOPDOGS (NAME, SALARY) VALUES (name, gehalt);
+    end loop;
     CLOSE empcursor;
+    COMMIT;
 END;
+/
 
