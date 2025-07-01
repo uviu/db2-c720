@@ -1,0 +1,176 @@
+**Dokument 4:
+
+{
+   "_id": "PZN 01669998",
+   "Bezeichnung": "Fenistil Gel",
+   "Anwendung": "Insektenstiche, Verbrennungen 1. Grades, Sonnenbrand",
+   "Hersteller": "Novartis Consumer Health GmbH",
+   "Hilfsstoffe": [
+       "Carbomer 980",
+       "Wasser",
+       "Natriumhydroxid",
+       "Methyl-4-hydroxybenzoat",
+       "Propylenglycol"
+   ],
+   "Packungsgroesse": "50g Gel",
+   "UVP": 11.11,
+   "Kategorie": "Hauterkrankungen",
+   "Wirkstoffe": [
+       "Dimetinden",
+       "Dimetinden maleat"
+   ]
+}
+
+**Dokument 5:
+
+{
+   "_id": "PZN 01743393",
+   "Bezeichnung": "Spalt Schmerztabletten",
+   "Anwendung": "Schmerzen",
+   "Hersteller": "Pfizer Consumer Healthcare GmbH",
+   "Packungsgroesse": "30 Tabletten",
+   "UVP": 8.97,
+   "Hilfsstoffe": [
+       "Stearinsaeure",
+       "Trimyristin",
+       "Siliciumdioxid, hochdisperses",
+       "Cellulosepulver",
+       "Cellulose, mikrokristalline",
+       "Povidon K25",
+       "Maisstaerke"
+   ],
+   "Kategorie": "Schmerzen & Fieber",
+   "Wirkstoffe": [
+       "Acetylsalicylsaeure",
+       "Paracetamol"
+   ]
+}
+
+**Dokument 6:
+
+{
+   "_id": "PZN 02137619",
+   "Bezeichnung": "Fenistil Gel",
+   "Anwendung": "Insektenstiche, Verbrennungen 1. Grades, Sonnenbrand",
+   "Hersteller": "Novartis Consumer Health GmbH",
+   "Hilfsstoffe": [
+       "Carbomer 9802",
+       "Wasser",
+       "Natriumhydroxid",
+       "Methyl-4-hydroxybenzoat",
+       "Propylenglycol"
+   ],
+   "Packungsgroesse": "100g Gel",
+   "UVP": 19.05,
+   "Kategorie": "Hauterkrankungen",
+   "Wirkstoffe": [
+       "Dimetinden",
+       "Dimetinden maleat"
+   ]
+}
+
+**Dokument 7:
+
+{
+   "_id": "PZN 03046735",
+   "Bezeichnung": "Thomapyrin Classic Schmerztabletten",
+   "Anwendung": "Schmerzen",
+   "Hersteller": "Boehringer Ingelheim Pharma GmbH & Co. KG",
+   "Packungsgroesse": "20 Tabletten",
+   "UVP": 5.85,
+   "Hilfsstoffe": [
+       "Stearinsaeure",
+       "Maisstaerke",
+       "Lactose-1-Wasser"
+   ],
+   "Kategorie": "Schmerzen & Fieber",
+   "Wirkstoffe": [
+       "Acetylsalicylsaeure",
+       "Paracetamol",
+       "Coffein"
+   ]
+}
+
+**Dokument 8:
+
+{
+   "_id": "PZN 08510427",
+   "Bezeichnung": "Diclofenac Ratiopharm Gel",
+   "Anwendung": "Prellungen oder Rueckenschmerzen",
+   "Hersteller": "ratiopharm GmbH",
+   "Hilfsstoffe": [
+       "Isopropanol",
+       "Hypromellose",
+       "PEG glycerol cocoat",
+       "Wasser",
+       "Propylenglycol"
+   ],
+   "Packungsgroesse": "150g Gel",
+   "UVP": 8.98,
+   "Kategorie": "Muskeln, Knochen, Gelenke",
+   "Wirkstoffe": [
+       "Diclofenac",
+       "Diclofenac natrium"
+   ]
+}
+
+**Dokument 9:
+
+{
+   "_id": "PZN 08689828",
+   "Bezeichnung": "Spalt Schmerztabletten",
+   "Anwendung": "Schmerzen",
+   "Hersteller": "Pfizer Consumer Healthcare GmbH",
+   "Packungsgroesse": "10 Tabletten",
+   "UVP": 3.8,
+   "Hilfsstoffe": [
+       "Stearinsaeure",
+       "Trimyristin",
+       "Siliciumdioxid, hochdisperses",
+       "Cellulosepulver",
+       "Cellulose, mikrokristalline",
+       "Povidon K25",
+       "Maisstaerke"
+   ],
+   "Kategorie": "Schmerzen & Fieber",
+   "Wirkstoffe": [
+       "Acetylsalicylsaeure",
+       "Paracetamol"
+   ]
+}
+
+**Dokument 10:
+
+{
+   "_id": "PZN 08689834",
+   "Bezeichnung": "Spalt Schmerztabletten",
+   "Anwendung": "Schmerzen",
+   "Hersteller": "Pfizer Consumer Healthcare GmbH",
+   "Packungsgroesse": "20 Tabletten",
+   "UVP": 6.27,
+   "Hilfsstoffe": [
+       "Stearinsaeure",
+       "Trimyristin",
+       "Siliciumdioxid, hochdisperses",
+       "Cellulosepulver",
+       "Cellulose, mikrokristalline",
+       "Povidon K25",
+       "Maisstaerke"
+   ],
+   "Kategorie": "Schmerzen & Fieber",
+   "Wirkstoffe": [
+       "Acetylsalicylsaeure",
+       "Paracetamol"
+   ]
+}
+
+**Dokument 11:
+{
+   "_id": "PZN 09511009",
+   "Titel": "Endlich Schlafen Buch",
+   "Hersteller": "Stiftung Warentest",
+   "UVP": 16.9,
+   "Kategorie": "Buecher"
+}
+
+
