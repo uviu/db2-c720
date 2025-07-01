@@ -7,12 +7,12 @@ select deptno,
                   xmlagg(xmlelement("Mitarbeiter",
                                     xmlattributes(
                                     empno as "id",
-                                    ename as "Name",
                                     job as "Beruf",
                                     mgr as "Manager",
                                     hiredate as "einstellDatum"
                       ),
                                     xmlforest(
+                                            ename as "Name",
                                             comm as "Kommission",
                                             sal as "Gehalt"
                                     )

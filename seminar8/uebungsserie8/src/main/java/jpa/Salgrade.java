@@ -1,12 +1,15 @@
 package jpa;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "SALGRADE")
 public class Salgrade {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(nullable = false)
+    private Long id;
+
     @Column(name = "GRADE")
     private Long grade;
 
@@ -15,6 +18,14 @@ public class Salgrade {
 
     @Column(name = "HISAL")
     private Long hisal;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Long getGrade() {
         return grade;

@@ -1,8 +1,6 @@
 package jpa;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 
 import java.math.BigDecimal;
@@ -10,12 +8,25 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "TOPDOGS")
 public class Topdog {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(nullable = false)
+    private Long id;
+
     @Size(max = 25)
     @Column(name = "NAME", length = 25)
     private String name;
 
     @Column(name = "SALARY", precision = 11, scale = 2)
     private BigDecimal salary;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

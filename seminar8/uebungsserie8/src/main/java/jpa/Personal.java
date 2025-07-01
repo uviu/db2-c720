@@ -1,13 +1,16 @@
 package jpa;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "PERSONAL")
 public class Personal {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(nullable = false)
+    private Long id;
+
     @Size(max = 20)
     @Column(name = "VNAME", length = 20)
     private String vname;
@@ -26,6 +29,14 @@ public class Personal {
     @Size(max = 30)
     @Column(name = "ORT", length = 30)
     private String ort;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getVname() {
         return vname;

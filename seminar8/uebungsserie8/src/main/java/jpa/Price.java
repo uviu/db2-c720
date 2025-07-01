@@ -2,6 +2,7 @@ package jpa;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
@@ -26,6 +27,8 @@ public class Price {
 
     @Column(name = "ENDDATE")
     private LocalDate enddate;
+    @Id
+    private Long id;
 
     public Integer getProdid() {
         return prodid;
@@ -67,4 +70,11 @@ public class Price {
         this.enddate = enddate;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
