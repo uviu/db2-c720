@@ -23,6 +23,20 @@ begin
 end;
 /
 
+-- alternativ
+ACCEPT zahl1 NUMBER PROMPT 'Geben Sie die erste Zahl ein: '
+ACCEPT zahl2 NUMBER PROMPT 'Geben Sie die zweite Zahl ein: '
+
+DECLARE
+  v_zahl1 NUMBER := &zahl1;
+  v_zahl2 NUMBER := &zahl2;
+  v_ergebnis NUMBER;
+BEGIN
+  v_ergebnis := (v_zahl1 / v_zahl2) + v_zahl2;
+  DBMS_OUTPUT.PUT_LINE('Ergebnis: ' || v_ergebnis);
+END;
+/
+
 --Aufgabe 6
 -- Eingabe der Variablen über SQL*Plus
 ACCEPT gehalt PROMPT 'Bitte geben Sie das Jahresgehalt ein: '
@@ -39,5 +53,33 @@ BEGIN
 END;
 /
 
---Aufagbe 8
+-- Aufgabe 7
+DECLARE
+    max_deptno NUMBER;
+BEGIN
+    SELECT MAX(deptno)
+      INTO max_deptno
+      FROM dept;
+    DBMS_OUTPUT.PUT_LINE('Maximaler Wert: ' || max_deptno);
+END;
+/
+
+--Aufgabe 8
 --anzahl := sql%rowcount
+
+-- Aufgabe 10
+INSERT INTO dept (deptno, dname, loc) VALUES (50, 'EDUCATION', 'LEIPZIG');
+INSERT INTO dept (deptno, dname, loc) VALUES (60, 'ADMINISTRATION', 'LEIPZIG');
+COMMIT;
+
+ACCEPT ort CHAR PROMPT 'Bitte geben Sie die Location ein: '
+
+DECLARE
+    v_ort   dept.loc%TYPE := '&ort';
+    v_count NUMBER;
+BEGIN
+    DELETE FROM dept WHERE loc = v_ort;
+    v_count := SQL%ROWCOUNT;
+    DBMS_OUTPUT.PUT_LINE('Anzahl der gelöschten Abteilungen: ' || v_count);
+END;
+/
